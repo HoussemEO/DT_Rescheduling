@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "t_event": 54.97262170979985,
+    "event_index": 1,
+    "break_times": [
+      101.74302382223703
+    ],
+    "job_arrival_times": [
+      54.97262170979985
+    ],
+    "new_jobs_added": [
+      4
+    ],
+    "down_machines_1based": []
+  },
+  "machines": [
+    {
+      "machine_id": 1,
+      "robot": "AGV",
+      "status": "UP"
+    },
+    {
+      "machine_id": 2,
+      "robot": "RightArm",
+      "status": "UP"
+    },
+    {
+      "machine_id": 3,
+      "robot": "Conveyer",
+      "status": "UP"
+    },
+    {
+      "machine_id": 4,
+      "robot": "LeftArm",
+      "status": "UP"
+    },
+    {
+      "machine_id": 5,
+      "robot": "AGV",
+      "status": "UP"
+    }
+  ],
+  "jobs": [
+    {
+      "job": 0,
+      "tasks": [
+        {
+          "task": 0,
+          "Robot_id": "AGV",
+          "state": "DONE",
+          "operation": {
+            "name": "storage_to_right",
+            "duration": "13.00s"
+          }
+        },
+        {
+          "task": 1,
+          "Robot_id": "RightArm",
+          "state": "DONE",
+          "operation": {
+            "name": "AGV Pick + Conveyor Drop",
+            "duration": "9.00s"
+          }
+        },
+        {
+          "task": 2,
+          "Robot_id": "Conveyer",
+          "state": "DONE",
+          "operation": {
+            "name": "right_to_left",
+            "duration": "5.50s"
+          }
+        },
+        {
+          "task": 3,
+          "Robot_id": "LeftArm",
+          "state": "RUNNING",
+          "operation": {
+            "name": "Conveyor Pick + Lane1 Drop",
+            "duration": "9.30s"
+          }
+        },
+        {
+          "task": 4,
+          "Robot_id": "RightArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Lane1 Pick + AGV Drop",
+            "duration": "10.76s"
+          }
+        },
+        {
+          "task": 5,
+          "Robot_id": "AGV",
+          "state": "PENDING",
+          "operation": {
+            "name": "right_to_delivery + delivery_to_right",
+            "duration": "20.00s"
+          }
+        }
+      ]
+    },
+    {
+      "job": 1,
+      "tasks": [
+        {
+          "task": 0,
+          "Robot_id": "AGV",
+          "state": "DONE",
+          "operation": {
+            "name": "storage_to_right",
+            "duration": "13.00s"
+          }
+        },
+        {
+          "task": 1,
+          "Robot_id": "RightArm",
+          "state": "DONE",
+          "operation": {
+            "name": "AGV Pick + Conveyor Drop",
+            "duration": "9.00s"
+          }
+        },
+        {
+          "task": 2,
+          "Robot_id": "Conveyer",
+          "state": "RUNNING",
+          "operation": {
+            "name": "right_to_left",
+            "duration": "5.50s"
+          }
+        },
+        {
+          "task": 3,
+          "Robot_id": "LeftArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Conveyor Pick + Lane1 Drop",
+            "duration": "9.30s"
+          }
+        },
+        {
+          "task": 4,
+          "Robot_id": "RightArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Lane1 Pick + AGV Drop",
+            "duration": "10.76s"
+          }
+        },
+        {
+          "task": 5,
+          "Robot_id": "AGV",
+          "state": "PENDING",
+          "operation": {
+            "name": "right_to_delivery + delivery_to_right",
+            "duration": "20.00s"
+          }
+        }
+      ]
+    },
+    {
+      "job": 2,
+      "tasks": [
+        {
+          "task": 0,
+          "Robot_id": "RightArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Lane1 Pick + Conveyor Drop",
+            "duration": "11.60s"
+          }
+        },
+        {
+          "task": 1,
+          "Robot_id": "Conveyer",
+          "state": "DONE",
+          "operation": {
+            "name": "right_to_left",
+            "duration": "5.50s"
+          }
+        },
+        {
+          "task": 2,
+          "Robot_id": "LeftArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Conveyor Pick + Lane5 Drop",
+            "duration": "9.30s"
+          }
+        },
+        {
+          "task": 3,
+          "Robot_id": "RightArm",
+          "state": "RUNNING",
+          "operation": {
+            "name": "Lane5 Pick + Conveyor Drop",
+            "duration": "10.00s"
+          }
+        },
+        {
+          "task": 4,
+          "Robot_id": "LeftArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Conveyor Pick + AGV Drop",
+            "duration": "10.30s"
+          }
+        }
+      ]
+    },
+    {
+      "job": 3,
+      "tasks": [
+        {
+          "task": 0,
+          "Robot_id": "RightArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Lane4 Pick + Conveyor Drop",
+            "duration": "9.00s"
+          }
+        },
+        {
+          "task": 1,
+          "Robot_id": "Conveyer",
+          "state": "DONE",
+          "operation": {
+            "name": "right_to_left",
+            "duration": "5.50s"
+          }
+        },
+        {
+          "task": 2,
+          "Robot_id": "LeftArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Conveyor Pick + Lane4 Drop",
+            "duration": "9.30s"
+          }
+        },
+        {
+          "task": 3,
+          "Robot_id": "RightArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Lane4 Pick + Conveyor Drop",
+            "duration": "10.00s"
+          }
+        },
+        {
+          "task": 4,
+          "Robot_id": "LeftArm",
+          "state": "DONE",
+          "operation": {
+            "name": "Conveyor Pick + AGV Drop",
+            "duration": "10.00s"
+          }
+        },
+        {
+          "task": 5,
+          "Robot_id": "AGV",
+          "state": "RUNNING",
+          "operation": {
+            "name": "rightt_to_leftt + left_to_delivery",
+            "duration": "20.00s"
+          }
+        }
+      ]
+    },
+    {
+      "job": 4,
+      "tasks": [
+        {
+          "task": 0,
+          "Robot_id": "AGV",
+          "state": "PENDING",
+          "operation": {
+            "name": "storage_to_right",
+            "duration": "13.00s"
+          }
+        },
+        {
+          "task": 1,
+          "Robot_id": "RightArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "AGV Pick + Conveyor Drop",
+            "duration": "9.00s"
+          }
+        },
+        {
+          "task": 2,
+          "Robot_id": "Conveyer",
+          "state": "PENDING",
+          "operation": {
+            "name": "right_to_left",
+            "duration": "5.50s"
+          }
+        },
+        {
+          "task": 3,
+          "Robot_id": "LeftArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Conveyor Pick + Lane1 Drop",
+            "duration": "9.30s"
+          }
+        },
+        {
+          "task": 4,
+          "Robot_id": "RightArm",
+          "state": "PENDING",
+          "operation": {
+            "name": "Lane1 Pick + AGV Drop",
+            "duration": "10.76s"
+          }
+        },
+        {
+          "task": 5,
+          "Robot_id": "AGV",
+          "state": "PENDING",
+          "operation": {
+            "name": "right_to_delivery + delivery_to_right",
+            "duration": "20.00s"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "job": 4,
+    "task": 4,
+    "Robot_id": "RightArm",
+    "machine_id": 2,
+    "resource": "RightArm_2",
+    "start_time": 0.0,
+    "end_time": 10.76,
+    "operation": {
+      "name": "Lane1 Pick + AGV Drop",
+      "duration": "10.76s"
+    }
+  },
+  {
+    "job": 4,
+    "task": 5,
+    "Robot_id": "AGV",
+    "machine_id": 5,
+    "resource": "AGV_5",
+    "start_time": 10.76,
+    "end_time": 30.759999999999998,
+    "operation": {
+      "name": "right_to_delivery + delivery_to_right",
+      "duration": "20.00s"
+    }
+  }
+]
