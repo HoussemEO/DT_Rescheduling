@@ -1,0 +1,13 @@
+job,task,Robot_id,machine_id,resource,start_time,end_time,op_name,op_duration
+4,0,RightArm,2,RightArm_2,0.000000,9.000000,Lane4 Pick + Conveyor Drop,9.00s
+5,0,AGV,5,AGV_5,0.000000,13.000000,storage_to_right,13.00s
+4,1,Conveyer,3,Conveyer_3,9.000000,14.500000,right_to_left,5.50s
+4,2,LeftArm,4,LeftArm_4,14.500000,23.800000,Conveyor Pick + Lane4 Drop,9.30s
+4,3,RightArm,2,RightArm_2,23.800000,33.800000,Lane4 Pick + Conveyor Drop,10.00s
+5,1,RightArm,2,RightArm_2,33.800000,42.800000,AGV Pick + Conveyor Drop,9.00s
+4,4,LeftArm,4,LeftArm_4,33.800000,43.800000,Conveyor Pick + AGV Drop,10.00s
+5,2,Conveyer,3,Conveyer_3,42.800000,48.300000,right_to_left,5.50s
+4,5,AGV,5,AGV_5,43.800000,63.800000,rightt_to_leftt + left_to_delivery,20.00s
+5,3,LeftArm,4,LeftArm_4,48.300000,57.600000,Conveyor Pick + Lane1 Drop,9.30s
+5,4,RightArm,2,RightArm_2,57.600000,68.360000,Lane1 Pick + AGV Drop,10.76s
+5,5,AGV,5,AGV_5,68.360000,88.360000,right_to_delivery + delivery_to_right,20.00s
